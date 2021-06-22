@@ -19,5 +19,11 @@
             "128": "images/favicon/favicon-128x128.png"
         }
     },
-    "permissions": ["activeTab"]
+    "permissions": [
+        "activeTab"
+    ],
+    "host_permissions":[
+        "http://*/*",
+        "https://*/*"
+    ]
 }
