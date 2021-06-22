@@ -6,15 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon Info</title>
     <link rel="stylesheet" href="css/popup.css">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 </head>
 <body>
-    <div>
+    <div class="form-wrapper">
         <form id="amazon-form">
-            <label class="field-label" for="a_url">Amazon Url:</label><br>
-            <input type="text" id="a_url" value=""><br>
-            <label class="field-label" for="token">ProxyCrawl Token:</label><br>
-            <input type="text" id="token" value="Doe"><br><br>
-            <input type="submit" id="submit_btn" value="Submit">
+            <div class="form__group">
+                <input type="input" class="form__field" placeholder="Amazon Url" id='a_url' required />
+                <label for="a_url" class="form__label">Amazon Url</label>
+            </div>
+            <div class="form__group">
+                <input type="input" id='token' class="form__field" placeholder="ProxyCrawl Token" required />
+                <label for="token" class="form__label">ProxyCrawl Token</label>
+            </div>
+            <div class="btn-wrapper form__group">
+                <Button type="submit" id="submit_btn">Submit</Button>
+            </div>
         </form>
         <div id="result"></div>
 

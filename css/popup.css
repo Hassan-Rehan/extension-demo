@@ -1,21 +1,97 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 
-html,body{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+body{
+    font-family: 'Poppins', sans-serif; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0;
-    min-height: 150px;
-    padding: 0;
-    width: 384px;
+    padding: 15px 10px;
+    width: 350px;
+    background-color:#222222;
 }
 
-.field-label{
-    color: grey;
-    font: bold;
-    font-weight: 400;
+/* form styling */
+.form-wrapper{
+    width: 100%;
 }
 
-#result{
+.form__group {
+  position: relative;
+  padding: 10px 0 0;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.1rem;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+    color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+    font-size: 1.1rem;
+    cursor: text;
+    top: 20px;
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 0.8rem;
+    color: #9b9b9b;
+}
+
+.form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 0.8rem;
+    color: #11998e;
+    font-weight:700;    
+}
+.form__field:focus {
+    padding-bottom: 6px;  
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #11998e,#38ef7d);
+    border-image-slice: 1;
+}
+/* reset input */
+.form__field:required,.form__field:invalid {
+     box-shadow:none; 
+}
+
+.btn-wrapper{
+    text-align: end;
+}
+
+#submit_btn{
+    background: #f3d847 !important;
+    color: #0e0e10 !important;
+    padding: 10px !important;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+}
+
+#result:not(:empty){
     max-height: 150px;
-    overflow: scroll;
+    padding: 10px 5px 5px 5px;
+    overflow: auto;
+    background-color: #ffffff;
+    margin-top: 10px;
 }
