@@ -26,7 +26,3 @@ _Please create a free ProxyCrawl account if you haven't done so yet to get your 
 - Even if your design skills are not strong, please try as best as you can. We want to see your creativity!
 - The test is not time metered but we don't want you to use more than 5 hours on it.
 - If you have any questions, don't hesitate to contact the person in charge of your application.
-
-
-
-Note: Why are you using proxycrawl. We can create our own pasers to scrape data...
